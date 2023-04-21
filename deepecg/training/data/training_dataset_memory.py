@@ -130,7 +130,7 @@ class TrainingDB(object):
         self.labels = pd.DataFrame(index=[], columns=['file_name', 'label_str', 'label_int'])
 
         # Loop through waveforms
-        for file_name in list(self.waveforms.keys()):
+        for file_name in tqdm.tqdm(list(self.waveforms.keys())):
 
             # Get training segments
             self._get_segments(file_name=file_name)

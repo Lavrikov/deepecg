@@ -17,6 +17,7 @@ import scipy.io as sio
 from ipywidgets import interact
 import matplotlib.pylab as plt
 from sklearn.model_selection import train_test_split
+import tqdm
 
 # Local imports
 from deepecg.training.data.ecg import ECG
@@ -52,7 +53,7 @@ class WaveformDB(object):
         self.labels = self._load_labels()
 
         # Loop through waveform files
-        for idx, row in self.labels.iterrows():
+        for idx, row in tqdm.tqdm(self.labels.iterrows(),total=self.labels.shape[0]):
 
             # Get waveform
             waveform = ECG(file_name=self.labels.loc[idx, 'file_name'], label=self.labels.loc[idx, 'label'],

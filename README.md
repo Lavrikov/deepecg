@@ -4,9 +4,9 @@ Hi, here I decided to remaster deepecg network of Goodfellow et al. [https://git
 The original architecture was made of tensorflow which honestly hard to experiment with. In particular it tight to look inside network and realize how the decisions made. Later author made PyTorch version for Physionet challenge. But it to optimized for challenge task. The most important parts were buried under a lot of classes simplifying experimentation with folds and others stuff. So I made this base level repository with minimal preprocessing and "sugar"  training stuff. Interpretation results compared to original paper. I hope somebody can use it to start his own experiments.
 To quick start i made Kaggle notebook [https://www.kaggle.com/code/lavrikovav/deepecgpytorchpublic].
 
-In the original study, "a deep convolutional neural network was trained to classify single lead ECG waveforms as either 
+In the original study, "*a deep convolutional neural network was trained to classify single lead ECG waveforms as either 
 Normal Sinus Rhythm, Atrial Fibrillation, or Other Rhythm. The study was run in two phases, the first to generate a 
 classifier that performed at a level comparable to the top submission of the 
 [2017 Physionet Challenge](https://www.physionet.org/challenge/2017/), and the second to extract class activation 
-mappings to help better understand which areas of the waveform the model was focusing on when making a classification"
+mappings to help better understand which areas of the waveform the model was focusing on when making a classification*"
 

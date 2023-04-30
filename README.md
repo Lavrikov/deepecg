@@ -19,6 +19,11 @@ Attention map examples from my experiments
 
 ![alt text](./documents/__results___31_23.png)
 
+fig.1 Other rhythm correctly predicted
+
 ![fig.2 Normal sinus rhythm correctly predicted](./documents/__results___31_29.png)
-It is quite clear example of activation mape. You can clearly see at fig.2 that a mess area of the ECG has lower importance then others.
+
+fig.2 Normal sinus rhythm correctly predicted
+
+It is quite clear example of activation map. You can clearly see at fig.2 that a mess area of the ECG has lower importance then others. Fig 1. also represents visually remarkable maximum area correlated with an ECG beats interruption.
 Not everything areas so easy to explane.

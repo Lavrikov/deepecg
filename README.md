@@ -10,3 +10,10 @@ classifier that performed at a level comparable to the top submission of the
 [2017 Physionet Challenge](https://www.physionet.org/challenge/2017/), and the second to extract class activation 
 mappings to help better understand which areas of the waveform the model was focusing on when making a classification*"
 
+Attention map examples from my experiments
+
+![alt text](./documents/__results___31_23.png)
+
+![fig.2 Normal sinus rhythm correctly predicted](./documents/__results___31_29.png)
+It is quite clear example of activation mape. You can clearly see at fig.2 that a mess area of the ECG has lower importance then others.
+Not everything areas so easy to explane.

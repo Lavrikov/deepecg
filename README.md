@@ -1,7 +1,12 @@
 # Deep ECG Pytorch
 
-Hi, here I decided to remaster deepecg network of Goodfellow et al. [https://github.com/Seb-Good/deepecg.git] on clear PyTorch. This is CNN network at v7 has two underestimated features for automated ECG treating. First of all it has attention mapping with length close to initial time series. It allow us to investigate network decision making. This is vitally to show how it works with intuitive way. You will convince almost nobody in medical business to use your software with just classification of diseases. The second feature names "dilation_rate" varied in range from 2 to 256 for different layers. It has potential to fit the periodical nature of ECG signal without manual Fourie, Wavelet or other expert level preprocessing. 
-The original architecture was made of tensorflow which honestly hard to experiment with. In particular it tight to look inside network and realize how the decisions made. Later author made PyTorch version for Physionet challenge. But it to optimized for challenge task. The most important parts were buried under a lot of classes simplifying experimentation with folds and others stuff. So I made this base level repository with minimal preprocessing and "sugar"  training stuff. Interpretation results compared to original paper. I hope somebody can use it to start his own experiments.
+Hi, here I decided to remaster deepecg network of Goodfellow et al. [https://github.com/Seb-Good/deepecg.git] on clear PyTorch. This is CNN network at v7 has two underestimated features for automated ECG treating.
+
+First of all it has attention mapping with length close to initial time series. It allow us to investigate network decision making. This is vitally to show how it works with intuitive way. You will convince almost nobody in medical business to use your software with just classification of diseases.
+
+The second feature names "dilation_rate" varied in range from 2 to 256 for different layers. It has potential to fit the periodical nature of ECG signal without manual Fourie, Wavelet or other expert level preprocessing. 
+
+The original architecture was made of tensorflow which honestly hard to experiment with. In particular it tight to look inside network and realize how decisions made. Author made PyTorch version for Physionet challenge2020. But it is to optimized for challenge task. The most important parts were buried under a lot of classes simplifying experimentation with folds and others stuff. So I made this base level repository with minimal preprocessing and "sugar"  training stuff. Interpretation results compared to original paper. I hope somebody can use it to start his own experiments.
 To quick start i made Kaggle notebook [https://www.kaggle.com/code/lavrikovav/deepecgpytorchpublic].
 
 In the original study, "*a deep convolutional neural network was trained to classify single lead ECG waveforms as either 

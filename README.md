@@ -1,6 +1,6 @@
 # Deep ECG Pytorch
 
-Hi, here I decided to remaster deepecg network of Goodfellow et al. [https://github.com/Seb-Good/deepecg.git] on clear PyTorch. This is CNN network at v7 has two underestimated features for automated ECG treating.
+Hi, here I decided to remaster deepecg network of Goodfellow et al. [https://github.com/Seb-Good/deepecg.git] on clear PyTorch. This CNNv7 architecture has two underestimated features for automated ECG treating.
 
 First of all it has attention mapping with length close to initial time series. It allow us to investigate network decision making. This is vitally to show how it works with intuitive way. You will convince almost nobody in medical business to use your software with just classification of diseases.
 
